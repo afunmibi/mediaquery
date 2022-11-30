@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    width: 100%;
+    background-color: rgb(37, 37, 35);
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    height: 70px;   
+}
+
+.header-content h1 {
+    color: white;
+}
+
+.header-content span {
+    color: coral;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 35px;
+}
+
+.li-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-wrapper button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: coral;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-wrapper .hamburger {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.hamburger span {
+    width: 40px;
+    height: 10px;
+    color: red;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 22px;
+}
+
+.hero-content button {
+    margin-top: 30px;
+    background-color: coral;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 0.7rem 3rem;
+    border: none;
+}
+
+.hero-img {
+    width: 300px;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+/* Media Query starts here */
+
+@media screen and (max-width:786px) {
+    .header-wrapper,
+    .hero-container {
+        width: 95%;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .nav-links {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:664px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-content h1,
+    .hero-content p {
+        width: 100%;
+    }
+
+    .hero-img {
+        width: 350px;
+        margin-top: 50px;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        width: 100%;
+    }
+}
